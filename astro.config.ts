@@ -13,7 +13,6 @@ import remarkMath from "remark-math";
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
-  base: "/blog",
   integrations: [
     tailwind({
       applyBaseStyles: false,
