@@ -36,5 +36,5 @@ workflows.
 
 ## Links
 
-- [Link Integrity](/posts/links) - Exploring type theory as a solution to complex
+- [Link Integrity](/blog/posts/links) - Exploring type theory as a solution to complex
   note linking problems.
