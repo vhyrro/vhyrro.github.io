@@ -12,7 +12,7 @@ slug: "links"
 # Preface
 
 This blog post is part of the "maths as a note-taking foundation" series, which
-can be found [here](/blog/posts/type-theory).
+can be found [here](/posts/type-theory).
 
 The focus of this post is to introduce a concept called _link integrity_ - an idea
 that exists in various forms throughout many different note taking applications, but
