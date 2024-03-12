@@ -17,10 +17,7 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    mdx({
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    }),
+    mdx(),
     react(),
     sitemap(),
   ],
