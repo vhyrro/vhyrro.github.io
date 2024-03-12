@@ -136,7 +136,6 @@
 
 .katex-display {
     overflow-x: scroll;
-    transform: scale(125%);
     color: rgb(var(--color-text-base));
     filter: brightness(90%);
 }
