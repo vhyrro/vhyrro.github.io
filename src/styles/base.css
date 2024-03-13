@@ -135,9 +135,9 @@
 }
 
 .katex-display {
-    min-height: auto;
-    overflow-x: scroll;
-    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
     color: rgb(var(--color-text-base));
     filter: brightness(90%);
 }
