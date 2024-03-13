@@ -214,7 +214,7 @@ to the rules you make... at least that's what Richard Stallman told me.
 
 ### Embedded Latex Environments
 
-As a concept, these sounds great. They allow you to create math environments directly within
+As a concept, these sound great. They allow you to create math environments directly within
 your document:
 
 ```org
