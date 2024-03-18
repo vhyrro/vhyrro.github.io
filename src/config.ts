@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "Vhyrro's Digital Garden",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
