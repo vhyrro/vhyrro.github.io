@@ -1,5 +1,5 @@
 ---
-title: "Neorg and Luarocks"
+title: "Neorg 8.0.0"
 description: "'Why is my Neorg installation broken?'"
 pubDatetime: 2024-03-18
 tags:
