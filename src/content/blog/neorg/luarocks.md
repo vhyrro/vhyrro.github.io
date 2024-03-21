@@ -28,7 +28,7 @@ dependencies, build scripts and more for any program made in Lua.
 The easiest way to think of it is as a `cargo`/`crates.io` for Lua projects (and by extension Neovim plugins).
 
 For more information on why Neovim + Lua is a fantastic combo, look no further than [Marc's blog
-post](https://mrcjkb.dev/posts/2023-01-10-luarocks-tag-release.html) as well as [the rocks.nvim README](https://github.com/nvim-neorocks/rocks.nvim?tab=readme-ov-file#why-rocksnvim).
+post](https://mrcjkb.dev/posts/2023-01-10-luarocks-tag-release.html) as well as [the rocks.nvim README (why rocks.nvim?)](https://github.com/nvim-neorocks/rocks.nvim?tab=readme-ov-file#why-rocksnvim).
 
 ## Where does Neorg fit in?
 
@@ -36,8 +36,8 @@ While there have been dozens of plugins which have uploaded their plugins to lua
 `luasnip`, `nvim-treesitter`, `rest.nvim` and more), Neorg is the first to make the leap towards treating luarocks
 as a first-class citizen.
 
-We did not do this without reason, of course. Luarocks creates a slight
-inconvenience to you _right now_ but has massive positive consequences later
+We did not do this without reason, of course. Sure, luarocks creates a slight
+inconvenience to you _now_, but has massive positive consequences later
 down the line:
 
 - Dependencies are handled by us, not you (you'll never have to update your
@@ -52,6 +52,9 @@ down the line:
   An example is fuzzy finding - implementing a fuzzy finding algorithm from scratch is tedious,
   installing the `fzy` luarock gives us a fully-featured and well-tested repository right at our
   fingertips. Less bugs, less work.
+
+- _Luarocks is critical for the upcoming GTD implementation to function_. This part will be discussed
+  in further detail in another blog post :p
 
 ## Backwards Compatibility?
 
@@ -77,9 +80,12 @@ I encourage you to approach the issue with some patience, and please do report a
 so that I can fix them ASAP!
 
 Once we get past the initial wave of errors, the future is looking really bright for the functionality Neorg will be able to provide.
-Did I mention `luarocks` is also the critical backbone for our upcoming implementation of [GTD](https://github.com/nvim-neorg/neorg/issues/695)? :p
 
 ## The Fix
+
+Below we list three different ways of coping with the new changes.
+
+### Adapting Your Config
 
 If you're on `lazy.nvim`, the fix is to change your configuration to contain the following:
 
@@ -111,6 +117,21 @@ the entire build process should succeed!
 
 If you have any odd errors during the installation process, feel free to create an issue on the Github tracker
 (if the issue hasn't already been created by someone else!).
+
+### Pinning to `7.0.0`
+
+If Neorg's functionality is critical to whatever you're working on, feel free to pin Neorg to the older `7.0.0` release instead:
+
+```lua
+    {
+        "nvim-neorg/neorg",
+        version = "v7.0.0", -- This is the important part!
+        config = ...,
+    }
+```
+
+I encourage you to at least try the new release and -- if you have any errors -- report them to me either through the bug tracker or Discord!
+After that you're free to rollback to the `7.0.0` release as a fallback and continue taking notes as if nothing ever happened.
 
 ### Migrating to Rocks.nvim (optional)
 
