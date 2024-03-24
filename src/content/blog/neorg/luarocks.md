@@ -92,9 +92,8 @@ If you're on `lazy.nvim`, the fix is to change your configuration to contain the
 ```lua
     {
         "vhyrro/luarocks.nvim",
-        config = function()
-            require("luarocks").setup({})
-        end,
+        priority = 1000, -- We'd like this plugin to load first out of the rest
+        config = true, -- This automatically runs `require("luarocks-nvim").setup()`
     },
     {
         "nvim-neorg/neorg",
