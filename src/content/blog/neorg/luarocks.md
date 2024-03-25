@@ -87,7 +87,24 @@ Below we list three different ways of coping with the new changes.
 
 ### Adapting Your Config
 
-If you're on `lazy.nvim`, the fix is to change your configuration to contain the following:
+If you're on `lazy.nvim`, the fix is contained within the next two headings below.
+
+#### Prerequisites
+
+First, ensure that you have either `luajit` *or* Lua 5.1 installed on your system.
+This is the version of Lua that Neovim uses, but for some reason isn't vendored
+on a large chunk of people's machines.
+
+Here's the list of commands for all major OSes:
+- MacOS (brew): `brew install luajit`
+- Windows: [use the lua for windows installer](https://github.com/rjpcomputing/luaforwindows)
+- Apt: `sudo apt install liblua5.1-0-dev`
+- Dnf: `sudo dnf install compat-lua-devel-5.1.5`
+- Pacman: `sudo pacman -Syu lua51` or `sudo pacman -Syu luajit` (choose which you prefer)
+
+#### Changing the Configuration
+
+Once you have the prerequisites, simply change your configuration to the following:
 
 ```lua
     {
@@ -108,14 +125,14 @@ If you're on `lazy.nvim`, the fix is to change your configuration to contain the
 ```
 
 This snippet assumes you're on a custom-built, personal configuration. If you're using a distribution
-like AstroNvim, Lazyvim or others be sure to refer to the respective documentation and manuals for how
+like AstroNvim, LazyVim or others be sure to refer to the respective documentation and manuals for how
 to manage and add plugins.
 
 As long as you are installing `luarocks.nvim` and make it a _dependency_ of `neorg` then
 the entire build process should succeed!
 
-If you have any odd errors during the installation process, feel free to create an issue on the Github tracker
-(if the issue hasn't already been created by someone else!).
+If you have any odd errors during the installation process, feel free to check out the [dedicated thread on Github](https://github.com/nvim-neorg/neorg/issues/1342).
+The most common fix is to manually run `:Lazy build luarocks.nvim` and then `:Lazy build neorg`!
 
 ### Pinning to `7.0.0`
 
