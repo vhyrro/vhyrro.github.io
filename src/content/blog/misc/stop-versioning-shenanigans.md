@@ -83,7 +83,7 @@ against meaningful (semantic) versioning methodologies.
 Versioning schemes like ZeroVer never allow a project to hit a `1.0`
 release, as if the number `1` immediately devoids your project of
 all possibilities and autonomy, throwing it into the corporate
-hellscape of "versioning your breaking changes". God forbid your
+hellscape of "versioning your breaking changes". God forbid you
 ever hit the number `2`, as that's equivalent to rewriting your
 project from scratch.
 
