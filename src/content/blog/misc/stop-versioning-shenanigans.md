@@ -121,7 +121,7 @@ SemVer is not some sort of holy grail, but it's precisely what I said in the beg
 of this post, it's a *set and forget* system. Add something like [release-please](https://github.com/googleapis/release-please)
 to your repository and never think about it again[^2].
 
-Semantic versioning starts off at version `0.0.0`. The first number increments
+Semantic versioning (usually) starts off at version `0.1.0`. The first number increments
 on every breaking change, the second one increments on every
 backwards-compatible change or feature, and the third one increments on every
 chore or bugfix. Every number is incremented on its own whenever necessary.
