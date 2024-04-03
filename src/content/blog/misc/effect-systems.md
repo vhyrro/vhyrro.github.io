@@ -66,7 +66,7 @@ There's something that struck me as... wrong, when reading through all the resea
 the beginning of this post, does this concept really respect the symmetries of the system? Let's inspect how a type system works.
 
 A type in a type system generally remains the same size and/or shrinks. Don't believe me? Take the following snippet:
-```
+```rust
 let x: string = "hello world";
 
 x = 32;
