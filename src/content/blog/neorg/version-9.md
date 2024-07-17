@@ -78,10 +78,11 @@ Gorgeous. **Important note: nightly builds of Neovim are not officially supporte
 
 Dot repeat (`.`) has been expanded in this release. You can now dot repeat any action that modifies the buffer, including setting TODO states on an object.
 
-## Auto Tangling
+## Tangling
 
-`core.tangle` has been given a new option: `tangle_on_write`. When enabled, the current file will be tangled every time you save the file. Should make tangling an even bigger joy
-than it already is :)
+`core.tangle` has been given a new option: `tangle_on_write`. When enabled, the current file will be tangled every time you save the file.
+
+Furthermore, tangled files are now relative to the host file instead of Neovim's current working directory. Much more predictable!
 
 ## Conclusion
 
