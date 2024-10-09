@@ -27,7 +27,7 @@ manager for installing and managing plugins packaged as rocks. This has many adv
 importantly proper dependency resolution and all of the rigor that you get from
 a fully fledged package manager.
 
-After a few months of using `luarocks`, we started to encouter a few problems with the package manager deep down in its implementation.
+After a few months of using `luarocks`, we started to encounter a few problems with the package manager deep down in its implementation.
 No worries, though, we're happy to fulfill our due diligence as open source developers - we made issues to help track all of the problems
 down and they were resolved swiftly, lovely!
 

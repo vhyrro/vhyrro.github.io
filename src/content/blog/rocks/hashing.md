@@ -1,7 +1,7 @@
 ---
 title: "Rocks Devlog #002"
 description: "How your packages never break."
-pubDatetime: 2024-11-04
+pubDatetime: 2024-11-05
 tags:
   - rocks
 draft: false
