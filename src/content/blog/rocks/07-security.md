@@ -11,8 +11,11 @@ slug: "lux-update-07"
 
 ![The Lux logo](@assets/images/lux-logo.png)
 
-It has been several months since the last blog post! There have been many, many important changes made to Lux over the year.
-However, just recently, we've perhaps implemented the most important feature of all.
+It has been several months since the last blog post! As a recap,
+[Lux](https://github.com/lumen-oss/lux) is a modern package manager for Lua
+with a focus on ergonomics and simplicity. It has been in development for over
+a year now, and we have released **25 versions** so far. However, just
+recently, we've perhaps implemented the most important feature of all.
 
 We have spent the last two weeks working on integrating
 [piccolo](https://github.com/kyren/piccolo) into Lux as our VM for executing
@@ -53,4 +56,11 @@ Luanox is built with maximum security and zero-trust in mind - it's even
 resilient against a full leak of our internal databases as we don't store API
 keys nor other sensitive data.
 
-We're always committed to ensuring security and usability in Lux. Stay safe and cheers to the next release 🍻
+## Contributions
+
+We're always committed to ensuring security and usability in Lux.
+If you'd like to help us out, consider supporting us by starring our repositories or
+contributing on [OpenCollective](https://opencollective.com/lumen-labs). We are
+a small team but we're passionate to keep pushing the Lua ecosystem forward!
+
+Stay safe and cheers to the next release 🍻
